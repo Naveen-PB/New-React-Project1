@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+// import {BrowserRouter,Route,Routes} from 'react-router-dom';
+// import Home from './Home'
+// import About from './About'
+// import Contact from './Contact'
+// import Layout from './Layout'
+// export default function App() {
+//   return (
+//       <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Layout/>}>
+//           <Route index element={<Home/>}/>
+//           <Route path="about" element={<About/>}/>
+//           <Route path="contact" element={<Contact/>}/>
 
-function App() {
+//         </Route>
+//       </Routes>
+//       </BrowserRouter>
+//   )
+// }
+import React from 'react'
+import Basic from './EventClass/Basic'
+import Counter from './Counter'
+import Operation from './Operation'
+import UseState from './UseState'
+import Reducer from './Reducer'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Basic/>
+    <Counter/>
+    <Operation/>
+    <UseState/>
+    <Reducer/>
+    </>
+  )
 }
 
-export default App;
